@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Sobat Dagang - Segera Hadir | Platform Katalog & Marketplace Digital UMKM Indonesia
-    </title>
+
+    <title>Sobat Dagang - Segera Hadir | Platform Digital UMKM Indonesia</title>
+
     <meta
       name="description"
       content="Sobat Dagang - Platform marketplace & katalog digital untuk pelaku UMKM, vendor, dan perusahaan Indonesia. Daftarkan usahamu, pamerkan produk, dan jangkau lebih banyak pelanggan."
@@ -19,11 +19,9 @@
     <meta name="theme-color" content="#2563eb" />
     <link rel="canonical" href="https://sobatdagang.com" />
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="image/logo.png" />
     <link rel="apple-touch-icon" href="image/logo.png" />
 
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sobatdagang.com" />
     <meta
@@ -41,7 +39,6 @@
     <meta property="og:site_name" content="SobatDagang" />
     <meta property="og:locale" content="id_ID" />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -54,20 +51,34 @@
     <meta name="twitter:image" content="https://sobatdagang.com/image/header.jpeg" />
     <meta name="twitter:image:alt" content="Sobat Dagang - Platform Digital UMKM Indonesia" />
 
-    <!-- Structured Data / JSON-LD -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Sobat Dagang",
-        "url": "https://sobatdagang.com",
-        "description": "Platform katalog & marketplace digital untuk pelaku UMKM, vendor, dan perusahaan Indonesia.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://sobatdagang.com/search?q={search_term_string}",
-          "query-input": "required name=search_term_string"
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Sobat Dagang",
+          "url": "https://sobatdagang.com",
+          "description": "Platform katalog & marketplace digital untuk pelaku UMKM, vendor, dan perusahaan Indonesia.",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://sobatdagang.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Sobat Dagang",
+          "url": "https://sobatdagang.com",
+          "logo": "https://sobatdagang.com/image/logo.png",
+          "description": "Etalase Digital untuk Pelaku UMKM Indonesia",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "availableLanguage": ["Indonesian"]
+          }
         }
-      }
+      ]
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -76,6 +87,7 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
     <style>
       *,
       *::before,
@@ -250,87 +262,6 @@
         line-height: 1.7;
       }
 
-      /* Email form */
-      .notify-form {
-        display: flex;
-        gap: 12px;
-        max-width: 500px;
-        margin: 0 auto;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-
-      .notify-form input {
-        flex: 1;
-        min-width: 240px;
-        padding: 16px 24px;
-        border-radius: 14px;
-        border: 1px solid var(--border);
-        background: var(--bg);
-        color: var(--text);
-        font-size: 15px;
-        font-family: inherit;
-        outline: none;
-        transition:
-          border-color 0.3s,
-          box-shadow 0.3s;
-      }
-
-      .notify-form input::placeholder {
-        color: var(--gray-light);
-      }
-
-      .notify-form input:focus {
-        border-color: var(--primary);
-        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-      }
-
-      .notify-form button {
-        padding: 16px 32px;
-        border-radius: 14px;
-        border: none;
-        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-        color: #ffffff;
-        font-size: 15px;
-        font-weight: 700;
-        font-family: inherit;
-        cursor: pointer;
-        transition:
-          transform 0.2s,
-          box-shadow 0.3s;
-        white-space: nowrap;
-      }
-
-      .notify-form button:hover {
-        transform: translateY(-1px);
-        box-shadow: 0 8px 30px rgba(37, 99, 235, 0.3);
-      }
-
-      .form-note {
-        text-align: center;
-        margin-top: 12px;
-        font-size: 13px;
-        color: var(--gray);
-      }
-
-      .form-message {
-        text-align: center;
-        margin-top: 12px;
-        font-size: 14px;
-        font-weight: 600;
-        display: none;
-      }
-
-      .form-message.success {
-        color: #16a34a;
-        display: block;
-      }
-
-      .form-message.error {
-        color: #dc2626;
-        display: block;
-      }
-
       /* Features */
       .features {
         padding: 50px 0 70px;
@@ -406,71 +337,10 @@
         line-height: 1.6;
       }
 
-      /* Stats */
-      .stats {
-        padding: 40px 0;
-        border-top: 1px solid var(--border);
-        border-bottom: 1px solid var(--border);
-        margin-bottom: 40px;
-      }
-
-      .stats-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        gap: 32px;
-        text-align: center;
-      }
-
-      .stat-item .stat-number {
-        font-size: 32px;
-        font-weight: 800;
-        background: linear-gradient(135deg, var(--primary), var(--accent));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        margin-bottom: 4px;
-      }
-
-      .stat-item .stat-label {
-        font-size: 13px;
-        color: var(--gray);
-        font-weight: 500;
-      }
-
       /* Footer */
       .footer {
         padding: 40px 0;
         text-align: center;
-      }
-
-      .footer-socials {
-        display: flex;
-        justify-content: center;
-        gap: 16px;
-        margin-bottom: 24px;
-      }
-
-      .social-link {
-        width: 44px;
-        height: 44px;
-        border-radius: 12px;
-        background: var(--bg-soft);
-        border: 1px solid var(--border);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        font-size: 18px;
-        transition:
-          transform 0.2s,
-          border-color 0.3s,
-          box-shadow 0.3s;
-      }
-
-      .social-link:hover {
-        transform: translateY(-2px);
-        border-color: rgba(37, 99, 235, 0.3);
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
       }
 
       .footer p {
@@ -494,25 +364,12 @@
           margin-bottom: 32px;
         }
 
-        .notify-form input {
-          min-width: 100%;
-        }
-
-        .notify-form button {
-          width: 100%;
-        }
-
         .nav-badge {
           display: none;
         }
 
         .features-grid {
           grid-template-columns: 1fr;
-        }
-
-        .stats-grid {
-          grid-template-columns: repeat(2, 1fr);
-          gap: 24px;
         }
 
         .feature-card {
@@ -525,143 +382,80 @@
     <div class="bg-pattern"></div>
 
     <div class="container">
-      <!-- Navbar -->
       <nav class="navbar">
         <a href="https://sobatdagang.com" class="logo">
           <img
             src="image/logo.png"
-            alt="Sobat Dagang Logo"
+            alt="Logo Sobat Dagang"
             class="logo-img"
             width="40"
             height="40"
+            loading="eager"
+            fetchpriority="high"
           />
           <div class="logo-text">Sobat<span>Dagang</span></div>
         </a>
         <div class="nav-badge">🚀 Segera Hadir</div>
       </nav>
 
-      <!-- Hero -->
-      <section class="hero">
-        <div class="hero-coming-soon">Coming Soon</div>
+      <main>
+        <section class="hero">
+          <div class="hero-coming-soon">Coming Soon</div>
 
-        <h1>
-          Etalase Digital untuk<br />
-          <span class="highlight">Pelaku UMKM Indonesia</span>
-        </h1>
+          <h1>
+            Etalase Digital untuk<br />
+            <span class="highlight">Pelaku UMKM Indonesia</span>
+          </h1>
 
-        <p>
-          Platform katalog & marketplace digital yang memudahkan UMKM, vendor, dan perusahaan untuk
-          mendaftarkan usaha, memamerkan produk, dan terhubung dengan lebih banyak pelanggan.
-        </p>
+          <p>
+            Platform katalog & marketplace digital yang memudahkan UMKM, vendor, dan perusahaan
+            untuk mendaftarkan usaha, memamerkan produk, dan terhubung dengan lebih banyak
+            pelanggan.
+          </p>
+        </section>
 
-        <!-- Notify form -->
-        <!-- <form class="notify-form" id="notifyForm">
-          <input
-            type="email"
-            id="emailInput"
-            placeholder="Masukkan email kamu..."
-            required
-            autocomplete="email"
-          />
-          <button type="submit">Beri Tahu Saya</button>
-        </form>
-        <p class="form-note">Dapatkan notifikasi saat platform resmi diluncurkan.</p>
-        <div class="form-message" id="formMessage"></div> -->
-      </section>
+        <section class="features">
+          <h2 class="features-title">Fitur yang akan hadir</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon blue">🏪</div>
+              <h3>Profil Usaha</h3>
+              <p>
+                Daftarkan usahamu secara mandiri dengan profil lengkap — nama, deskripsi, alamat,
+                dan kontak.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon amber">📦</div>
+              <h3>Katalog Produk</h3>
+              <p>
+                Tampilkan detail produk daganganmu dengan foto, harga, dan deskripsi lengkap di
+                etalase digital.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon green">🔗</div>
+              <h3>Link Marketplace</h3>
+              <p>
+                Hubungkan toko online-mu di Shopee, Tokopedia, dan marketplace lainnya dalam satu
+                halaman.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon purple">📍</div>
+              <h3>Lokasi & Alamat</h3>
+              <p>
+                Tampilkan lokasi usahamu agar pelanggan lebih mudah menemukan dan mengunjungi
+                tokomu.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
 
-      <!-- Features -->
-      <section class="features">
-        <div class="features-title">Fitur yang akan hadir</div>
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon blue">🏪</div>
-            <h3>Profil Usaha</h3>
-            <p>
-              Daftarkan usahamu secara mandiri dengan profil lengkap — nama, deskripsi, alamat, dan
-              kontak.
-            </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon amber">📦</div>
-            <h3>Katalog Produk</h3>
-            <p>
-              Tampilkan detail produk daganganmu dengan foto, harga, dan deskripsi lengkap di
-              etalase digital.
-            </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon green">🔗</div>
-            <h3>Link Marketplace</h3>
-            <p>
-              Hubungkan toko online-mu di Shopee, Tokopedia, dan marketplace lainnya dalam satu
-              halaman.
-            </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon purple">📍</div>
-            <h3>Lokasi & Alamat</h3>
-            <p>
-              Tampilkan lokasi usahamu agar pelanggan lebih mudah menemukan dan mengunjungi tokomu.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Stats
-      <section class="stats">
-        <div class="stats-grid">
-          <div class="stat-item">
-            <div class="stat-number">65M+</div>
-            <div class="stat-label">Pelaku UMKM di Indonesia</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">61%</div>
-            <div class="stat-label">Kontribusi PDB Nasional</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">97%</div>
-            <div class="stat-label">Total Pelaku Usaha</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">∞</div>
-            <div class="stat-label">Peluang Bertumbuh</div>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- Footer -->
       <footer class="footer">
-        <div class="footer-socials">
-          <a href="#" class="social-link" aria-label="Instagram" title="Instagram">📷</a>
-          <a href="#" class="social-link" aria-label="WhatsApp" title="WhatsApp">💬</a>
-          <a href="#" class="social-link" aria-label="Facebook" title="Facebook">👥</a>
-          <a href="#" class="social-link" aria-label="Email" title="Email">✉️</a>
-        </div>
-        <p>
-          &copy; 2026 <a href="https://sobatdagang.com">SobatDagang.com</a> — Etalase Digital UMKM
-          Indonesia
-        </p>
+        <p>&copy; 2026 <a href="https://sobatdagang.com">SobatDagang.com</a></p>
       </footer>
     </div>
-
-    <script>
-      // Notify form
-      document.getElementById("notifyForm").addEventListener("submit", function (e) {
-        e.preventDefault();
-        var email = document.getElementById("emailInput").value.trim();
-        var msg = document.getElementById("formMessage");
-
-        if (!email) return;
-
-        msg.className = "form-message success";
-        msg.textContent = "✅ Terima kasih! Kami akan mengabari kamu saat platform diluncurkan.";
-        msg.style.display = "block";
-        document.getElementById("emailInput").value = "";
-
-        setTimeout(function () {
-          msg.style.display = "none";
-        }, 5000);
-      });
-    </script>
   </body>
 </html>
